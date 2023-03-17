@@ -17,4 +17,18 @@ public class JenkinsCalculator {
 			
 			return numOne - numTwo;
 		}
+	
+	//Method to multiply 2 numbers
+		
+		public int multiplyNumbers(int numOne,int numTwo) {
+			
+			return numOne * numTwo;
+		}
+		
+	//Method to divide 2 numbers
+		
+		public int divideNumbers(int numOne,int numTwo) {
+			
+			return numOne / numTwo;
+		}
 }
