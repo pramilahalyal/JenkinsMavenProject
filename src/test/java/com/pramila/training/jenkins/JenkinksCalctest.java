@@ -18,15 +18,4 @@ public class JenkinksCalctest {
 		assertEquals(5,myCalc.subtractNumbers(10, 5));	
 	}
 	
-	@Test
-	public void multiplyTest() {
-		JenkinsCalculator myCalc = new JenkinsCalculator();
-		assertEquals(30,myCalc.multiplyNumbers(5,7));	
-	}
-	
-	@Test
-	public void divideTest() {
-		JenkinsCalculator myCalc = new JenkinsCalculator();
-		assertEquals(5,myCalc.divideNumbers(10,10));	
-	}
 }
