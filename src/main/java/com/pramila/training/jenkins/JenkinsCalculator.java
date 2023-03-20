@@ -31,6 +31,6 @@ public class JenkinsCalculator {
 		public int divideNumbers(int numOne,int numTwo) {
 			
 			//return numOne / numTwo;
-			numTwo = "I am writing a sample test case"
+			numTwo = "I am writing a sample test case";
 		}
 }
