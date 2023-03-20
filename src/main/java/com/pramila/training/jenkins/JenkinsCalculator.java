@@ -32,5 +32,6 @@ public class JenkinsCalculator {
 			
 			//return numOne / numTwo;
 			//numTwo = "I am writing a sample test case";
+			return numTwo;
 		}
 }
