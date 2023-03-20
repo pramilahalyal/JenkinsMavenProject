@@ -22,7 +22,7 @@ public class JenkinsCalculator {
 		
 		public int multiplyNumbers(int numOne,int numTwo) {
 			
-			numThree = 0;
+			//numThree = 0;
 			return numOne * numTwo;
 		}
 		
