@@ -21,7 +21,7 @@ public class JenkinksCalctest {
 	@Test
 	public void multiplyTest() {
 		JenkinsCalculator myCalc = new JenkinsCalculator();
-		myCalc = "This is a string"
+		myCalc = "This is a string";
 		//assertEquals(30,myCalc.multiplyNumbers(5,7));
 		assertNotEquals("The multiplication test is failed", 40, 45); 
 	}
