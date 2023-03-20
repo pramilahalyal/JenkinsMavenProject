@@ -17,11 +17,12 @@ public class JenkinsCalculator {
 			
 			return numOne - numTwo;
 		}
-	
+		
 	//Method to multiply 2 numbers
 		
 		public int multiplyNumbers(int numOne,int numTwo) {
 			
+			numThree = 0;
 			return numOne * numTwo;
 		}
 		
@@ -29,6 +30,7 @@ public class JenkinsCalculator {
 		
 		public int divideNumbers(int numOne,int numTwo) {
 			
-			return numOne / numTwo;
+			//return numOne / numTwo;
+			numTwo = "I am writing a sample test case"
 		}
 }
