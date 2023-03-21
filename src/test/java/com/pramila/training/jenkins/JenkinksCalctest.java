@@ -5,6 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class JenkinksCalctest {
+	
+	private int compare_result;
 
 	@Test
 	public void addTest() {
@@ -21,7 +23,7 @@ public class JenkinksCalctest {
 	@Test
 	public void multiplyTest() {
 		JenkinsCalculator myCalc = new JenkinsCalculator();
-		myCalc = "This is a string";
+	
 		//assertEquals(30,myCalc.multiplyNumbers(5,7));
 		assertNotEquals("The multiplication test is failed", 40, 45); 
 	}
@@ -29,9 +31,47 @@ public class JenkinksCalctest {
 	@Test
 	public void divideTest() {
 		JenkinsCalculator myCalc = new JenkinsCalculator();
-		myCalc = 10;
+
 		//assertEquals(5,myCalc.divideNumbers(10,10));	
-		assertFalse("The division test is failed", false);
+		try
+		{
+			compare_result = myCalc.divideNumbers(6,3);
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
 	}
 	
+	@Test
+	public void divisionTest_Equal_Zero()
+	{
+		try
+		{
+			JenkinsCalculator myCalc=new JenkinsCalculator();
+			compare_result=myCalc.divideNumbers(6, 0);
+			assertEquals(2,compare_result);
+			
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public void testEqual()
+	{
+		JenkinsCalculator myCalc=new JenkinsCalculator();
+		boolean isEqual = myCalc.equalIntegers(4, 4);
+		assertTrue(isEqual);
+	}
+	
+	
+	@Test
+	public void testEqual_When_Not_Equal()
+	{
+		JenkinsCalculator myCalc=new JenkinsCalculator();
+		boolean isEqual = myCalc.equalIntegers(4, 2);
+		assertFalse(isEqual);
+	}
 }
+
